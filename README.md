@@ -63,5 +63,7 @@ extension in `arc://extensions`, and reconnect the MCP server.
 
 ## License
 
+The files in this repository are under the [WTFPL](LICENSE).
+
 The Playwright Extension is © Microsoft Corporation, Apache License 2.0. This repository
 contains no extension code; `install.sh` downloads it from the Chrome Web Store.

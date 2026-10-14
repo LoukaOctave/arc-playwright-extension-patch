@@ -1,0 +1,10 @@
+#!/bin/sh
+# Arc refuses a second process launch, so hand the URL to the running Arc instead.
+for arg in "$@"; do
+  case "$arg" in
+    -*) ;;
+    *) url="$arg" ;;
+  esac
+done
+[ -n "$url" ] && exec open -a Arc "$url"
+exec open -a Arc
